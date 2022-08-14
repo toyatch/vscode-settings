@@ -1,0 +1,75 @@
+// Place your key bindings in this file to override the defaults
+[
+    // # TAB
+    // ## emacs indent-for-tab-command
+    {
+        "key": "tab",
+        "command": "emacs-tab.reindentCurrentLine",
+        "when": "!terminalFocus"
+    },
+
+    // # バッファ管理
+    // ## switch-to-buffer / helm-mini
+    {
+        "key": "ctrl+x ctrl-b",
+        "command": "workbench.action.showAllEditorsByMostRecentlyUsed",
+        "when": "!terminalFocus"
+    },
+
+    // # ファイル管理
+    // ## helm-find-files
+    {
+        "key": "ctrl+x ctrl-f",
+        "command": "file-browser.open",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "file-browser.stepOut",
+        "when": "inFileBrowser",
+    },
+    {
+        "key": "ctrl+f",
+        "command": "file-browser.stepIn",
+        "when": "inFileBrowser",
+    },
+    {
+        "key": "ctrl+y",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "inFileBrowser",
+    },
+
+    // # ウィンドウ切替
+    // ## other-window
+    {
+        "key": "alt-q",
+        "command": "workbench.action.navigateEditorGroups",
+        "when": "!terminalFocus"
+    },
+
+    // # 範囲選択
+    // ## set-mark-command
+    // ## FIXME: クォーテーション内の単語を選ぶと末尾のクォーテーションが引っかかってしまう
+    {
+        "key": "ctrl+o",
+        "command": "emacs-mcx.paredit.markSexp",
+    },
+
+    // # 検索
+    // ## swiper-all-thing-at-point
+    {
+        "key": "ctrl+p",
+        "command": "editor.action.previousMatchFindAction",
+        "when": "editorFocus && findWidgetVisible && !config.emacs-mcx.cursorMoveOnFindWidget && !isComposing && !replaceInputFocussed"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "editor.action.nextMatchFindAction",
+        "when": "editorFocus && findWidgetVisible && !config.emacs-mcx.cursorMoveOnFindWidget && !isComposing && !replaceInputFocussed"
+     },
+     {
+        "key": "ctrl+y",
+        "command": "editor.action.clipboardPasteAction",
+        "when": "editorFocus && findWidgetVisible && !config.emacs-mcx.cursorMoveOnFindWidget && !isComposing && !replaceInputFocussed"
+    },
+]
