@@ -1,4 +1,6 @@
 {
   "window.zoomLevel": -1,
-  "emacs-mcx.strictEmacsMove": true
+  "emacs-mcx.strictEmacsMove": true,
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.visible": false
 }
