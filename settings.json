@@ -2,5 +2,8 @@
   "window.zoomLevel": -1,
   "emacs-mcx.strictEmacsMove": true,
   "editor.minimap.enabled": false,
-  "workbench.activityBar.visible": false
+  "workbench.activityBar.visible": false,
+  "terminal.integrated.defaultLocation": "editor",
+  "workbench.layoutControl.enabled": false,
+  "window.menuBarVisibility": "compact",
 }
