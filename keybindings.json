@@ -1,5 +1,7 @@
 // Place your key bindings in this file to override the defaults
 [
+    { "key": "ctrl-m",        "command": "acceptSelectedSuggestion",
+                              "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus" },
     // # TAB
     // ## emacs indent-for-tab-command
     { "key": "tab", "command": "emacs-tab.reindentCurrentLine", "when": "!inFileBrowser" },
